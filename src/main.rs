@@ -13,8 +13,6 @@ fn main() {
 
 fn App() -> Element {
     rsx! {
-        div {
-            "Hi"
-        }
+        "HIIII"
     }
 }
