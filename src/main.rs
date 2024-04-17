@@ -2,6 +2,7 @@
 
 use dioxus::prelude::*;
 use log::LevelFilter;
+const _CSS_URL: &str = manganis::mg!(file("assets/main.css"));
 
 fn main() {
     // Init debug
@@ -13,6 +14,9 @@ fn main() {
 
 fn App() -> Element {
     rsx! {
-        "HIIII"
+        div {
+            class: "flex w-full h-full bg-green-400 text-lg",
+            "HIIII"
+        }
     }
 }
