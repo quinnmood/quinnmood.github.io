@@ -2,7 +2,6 @@
 
 use dioxus::prelude::*;
 use log::LevelFilter;
-const _CSS_URL: &str = manganis::mg!(file("assets/main.css"));
 
 fn main() {
     // Init debug
