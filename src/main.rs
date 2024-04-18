@@ -2,6 +2,8 @@
 
 use dioxus::prelude::*;
 use log::LevelFilter;
+mod navbar;
+use navbar::Navbar;
 
 fn main() {
     // Init debug
@@ -14,8 +16,15 @@ fn main() {
 fn App() -> Element {
     rsx! {
         div {
-            class: "flex w-full h-full bg-green-400 text-lg",
-            "HIIII"
+            class: "flex flex-col h-dvh w-full grow bg-gray-800 min-h-dvh",
+            Navbar {
+
+            },
+            div {
+                class: "w-full grow flex bg-gray-800",
+            }
+
+
         }
     }
 }
